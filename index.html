@@ -1,0 +1,135 @@
+
+<!-- User experience requirements
+The following requirements cover what the app must do, from the user's perspective.
+
+The starting screen should have a button that users can click to start the quiz.
+Users should be prompted through a series of at least 5 multiple choice questions that they can answer.
+Users should be asked questions 1 after the other.
+Users should only be prompted with 1 question at a time.
+Users should not be able to skip questions.
+Users should also be able to see which question they're on (for instance, "7 out of 10") and their current score ("5 correct, 2 incorrect").
+Upon submitting an answer, users should:
+receive textual feedback about their answer. If they were incorrect, they should be told the correct answer.
+be moved onto the next question (or interact with an element to move on).
+Users should be shown their overall score at the end of the quiz. In other words, how many questions they got right out of the total questions asked.
+Users should be able to start a new quiz.
+
+Technical requirements
+Your quiz app must:
+
+Render answer choices in a <form>.
+Use semantic HTML, along with CSS and jQuery.
+Follow a11y best practices.
+Refer back to the checkpoints on accessibility and forms for help.
+Use responsive design.
+Be fully usable by keyboard (which will be easy enough if you start with a form).
+
+Process requirements
+Before you dive into the app, you'll need to:
+
+gather content for your app. That means typing up the questions you'll ask and gathering any images or icons you'll need.
+think about the user experiences outlined above and how your design must make them possible.
+design your app using HTML wireframes, which are HTML- (and minimal CSS-) only versions of the different screens in your app. -->
+
+
+
+<!-- Quiz Content:
+Parshas Mishpatim - 
+1. One who strikes his father or his mother...
+  a. ...shall be put to death.
+  b. ...shall get icecream.
+  c. ...shall receive 70 lashes.
+  d. ...shall be sold into slavery.
+
+2. An eye for an eye...
+  a. ...an egg for an egg.
+  b. ...a tooth for a tooth.
+  c. ...a bear for a bear.
+  d. ...a door for a door.
+
+3. You shall not allow a sorceress to...
+  a. ...bake.
+  b. ...buy a chair.
+  c. ...live.
+  d. ...get a college degree.
+
+4. If you come upon your enemy's bull or his stray donkey, you shall surely...
+  a. ...sell it for parts.
+  b. ...throw a party.
+  c. ...ask it for directions.
+  d. ...return it to him.
+
+5.  You shall not cook a kid...
+  a. ...on Tuesdays.
+  b. ...in his mother's milk.
+  c. ...in a wok.
+  d. ...in coconut milk. -->
+
+<!-- Intro button(press to start), STORE data for each question, with a/b/c/d as answer data. User enters letter and submits. If answer is correct, add to # of correct answers. If incorrect, show correct answer, and add to # of incorrect answers. After question is answered, "next" button appears. After 5th question, display score. 
+App should:
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz app</title>
+  <!-- Connect to CSS file -->
+</head>
+<body>
+  <h1>Parsha Quiz: Mishpatim</h1>
+  <h2>Complete the pasuk</h2>
+  <div>
+    <form action="">
+      <label for="">1. One who strikes his father or his mother...</label>
+      <p>a. ...shall be put to death. <br>
+        b. ...shall get ice cream. <br>
+        c. ...shall receive 70 lashes. <br>
+        d. ...shall be sold into slavery.</p>
+      <input type="">
+      <button>Submit</button>
+    </form>
+    <form action="">
+      <label for="">2. An eye for an eye,...</label>
+      <p>a. ...an egg for an egg. <br>
+        b. ...a tooth for a tooth. <br>
+        c. ...a bear for a bear. <br>
+        d. ...a door for a door.</p>
+      <input type="">
+      <button>Submit</button>
+    </form>
+    <form action="">
+      <label for="">3. You shall not allow a sorceress to...</label>
+      <p>a. ...bake. <br>
+        b. ...buy a chair. <br>
+        c. ...live. <br>
+        d. ...get a college degree.</p>
+      <input type="">
+      <button>Submit</button>
+    </form>
+    <form action="">
+      <label for="">4. If you come upon your enemy's bull or his stray donkey, you shall surely...
+      </label>
+      <p>a. ...sell it for parts. <br>
+        b. ...throw a party. <br>
+        c. ...ask it for directions. <br>
+        d. ...return it to him.</p>
+      <input type="">
+      <button>Submit</button>
+    </form>
+    <form action="">
+      <label for="">5.  You shall not cook a kid...</label>
+      <p>a. ...on Tuesdays. <br>
+        b. ...in his mother's milk. <br>
+        c. ...in a wok. <br>
+        d. ...in coconut milk.</p>
+      <input type="">
+      <button>Submit</button>
+    </form>
+  </div>
+<!-- Connect to JS file -->
+ 
+</body>
+</html>
